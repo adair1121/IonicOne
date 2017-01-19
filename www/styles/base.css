@@ -1,0 +1,11 @@
+html{
+  font-size:625% !important;
+  font-family: 'Microsoft YaHei','SimHei', sans-serif !important;
+}
+
+body{
+  width:100%;
+  overflow-x:hidden;
+  background:#cccccc;
+}
+

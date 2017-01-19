@@ -1,0 +1,22 @@
+<ion-view view-title="app详情页">
+  <ion-content class="padding">
+      <div class="item item-thumbnail-left item-button-right app-detail" >
+        <img style="width: 50px;height: 50px;" src={{logoPath}} alt="{{appName}}" title="{{appName}}">
+        <h2 class="app-title"><span ng-bind="appName"></span></h2>
+        <p>{{dTimes}}下载&nbsp;&nbsp;{{size}}MB</p>
+      </div>
+      <div class="app-intro">
+          <h2>应用介绍</h2>
+      </div>
+      <div class="contact-us">
+         <h2>联系我们&nbsp;:</h2>
+         <span>客服电话&nbsp;:&nbsp;400-706-7131</span>
+         <span>官网&nbsp;:&nbsp;pati.edu-china.com</span>
+         <span>版本&nbsp;:&nbsp;1.1.0</span>
+         <span>时间&nbsp;:&nbsp;{{time}}</span>
+      </div>
+    <a class="down-load-btn" ng-if="btnType===1" href="{{download}}" >下载&nbsp;(&nbsp;{{size}}MB&nbsp;)</a>
+    <a class="down-load-btn" ng-if="btnType===2" href="{{download}}" >更新</a>
+    <a class="down-load-btn" ng-if="btnType===3" ng-click="openApp()">打开</a>
+  </ion-content>
+</ion-view>

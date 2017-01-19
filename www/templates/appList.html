@@ -1,0 +1,12 @@
+<ion-view view-title="{{pageTitle}}">
+  <ion-content class="padding" scroller>
+    <ion-list ng-repeat="typeItem in kindList">
+      <p><i></i>{{typeItem.title}}</p>
+      <ion-item ng-repeat="item in typeItem.appList" class="app-item">
+        <app-list-item></app-list-item>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll on-infinite="loadMore()" distance="1%" ng-if="!noMore">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

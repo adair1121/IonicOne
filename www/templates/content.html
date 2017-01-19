@@ -1,0 +1,45 @@
+<ion-view view-title="{{homeTitle}}">
+  <ion-content lazy-scroll>
+    <!--<ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>-->
+    <ion-slide-box does-continue="true" delegate-handle="image-viewer1" auto-play="true" show-pager="true" slide-interval="3000">
+      <banner></banner>
+    </ion-slide-box>
+    <ion-list class="nav-container">
+      <ion-item class=" nav-item">
+        <a  ng-click="navClick('高中')">
+          <i class="button button-icon icon ion-earth"></i>
+          高中
+        </a>
+      </ion-item>
+      <div class="vertical-line v-pos1"></div>
+      <ion-item class=" nav-item">
+        <a  ng-click="navClick('初中')">
+          <i class="button button-icon icon ion-waterdrop"></i>
+          初中
+        </a>
+      </ion-item>
+      <div class="horizontal-line h-pos1"></div>
+      <ion-item class=" nav-item">
+        <a  ng-click="navClick('小学')">
+          <i class="button button-icon icon ion-bonfire"></i>
+          小学
+        </a>
+      </ion-item>
+      <div class="vertical-line v-pos2"></div>
+      <div class="horizontal-line h-pos2"></div>
+      <ion-item class=" nav-item">
+        <a  ng-click="navClick('学前')">
+          <i class="button button-icon icon ion-umbrella"></i>
+          学前
+        </a>
+      </ion-item>
+      <ion-item class="nav-all">
+        <a  ng-click="navClick('综合')">
+          <i class="button button-icon icon ion-no-smoking"></i>
+          综合
+        </a>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
